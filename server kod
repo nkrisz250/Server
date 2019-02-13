@@ -1,2 +1,6 @@
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install nmap
+sudo apt install openssh-server
+sudo apt-get install ansible
+sudo git clone https://github.com/andreipak/wordpress-ansible
+sudo ansible-playbook playbook.yml -i hosts -e mysql_root_password=#password#
